@@ -17,8 +17,8 @@ The staged public files were scanned for exact configured secret values and comm
 - Exam accuracy remains unknown; no exam key was consulted.
 - Visibility heuristics, quote parsing, OCR/attachments, and vendor authentication have documented limits.
 - The repaired baseline batch adapter was tested offline only; submission preparation made no new model API calls.
-- GitHub publication and anonymous remote-file verification must complete before final submission.
+- Publication verification is recorded separately in publication_verification.json.
 
 ## Publication
 
-Authorized repository: https://github.com/DanielKim-94/HW6. Push and anonymous verification are pending. The user will submit the verified repository URL to Canvas themselves.
+Authorized repository: https://github.com/DanielKim-94/HW6. Anonymous cloning and byte-for-byte verification of the initial submission succeeded; see publication_verification.json. The user will submit the verified repository URL to Canvas themselves.

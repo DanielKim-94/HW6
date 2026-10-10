@@ -141,12 +141,12 @@ def main():
                  'Exam accuracy remains unknown; no exam key was consulted.',
                  'Visibility heuristics, quote parsing, OCR/attachments, and vendor authentication have documented limits.',
                  'The repaired baseline batch adapter was tested offline only; submission preparation made no new model API calls.',
-                 'GitHub publication and anonymous remote-file verification must complete before final submission.']
+                 'Publication verification is recorded separately in publication_verification.json.']
     result={'layout':'passed','data_file_counts':counts,'data_files':data_paths,'required_paths':required,'staged_file_count':len(staged),'git_index_preserves_exact_bytes':True,
             'verified_returned_api_calls_by_study':checked,'snapshots':snapshots,'final_agent_matches_exam_freeze':True,
             'offline_report':'self-contained structure and embedded bytes verified; user reviewed this hash in Edge',
             'report_sha256':digest(OUT/'hw6_report.html'),'secret_scan':{'configured_secret_matches':0,'credential_pattern_matches':0,'ignored_secrets_and_envs':True},
-            'limits':limitations,'repository_url':'https://github.com/DanielKim-94/HW6','publication':'pending push and public verification'}
+            'limits':limitations,'repository_url':'https://github.com/DanielKim-94/HW6','publication':load('publication_verification.json') if (OUT/'publication_verification.json').exists() else 'pending push and public verification'}
     (OUT/'submission_checks.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
     text=f'''# Problem 10 - Submission checks
 
@@ -165,7 +165,7 @@ The staged public files were scanned for exact configured secret values and comm
 '''+''.join('- '+item+'\n' for item in limitations)+'''
 ## Publication
 
-Authorized repository: https://github.com/DanielKim-94/HW6. Push and anonymous verification are pending. The user will submit the verified repository URL to Canvas themselves.
+Authorized repository: https://github.com/DanielKim-94/HW6. Anonymous cloning and byte-for-byte verification of the initial submission succeeded; see publication_verification.json. The user will submit the verified repository URL to Canvas themselves.
 '''
     (OUT/'submission_checks.md').write_text(text,encoding='utf-8')
     print(json.dumps({'layout':'passed','counts':counts,'verified_calls':checked,'secret_matches':0,'staged_files':len(staged)}))

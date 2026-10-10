@@ -135,6 +135,6 @@ Static rendering heuristics do not fully reproduce browser/PDF visibility, scann
 
 `output/submission_checks.md` and `output/submission_checks.json` record the provided-layout, run-evidence, secret-exclusion, and offline checks. These checks cover the user-specified file list; no complete independent grading rubric was supplied, so full rubric compliance is not claimed. Run records are internally matched to audit/API metadata; they are not independently reconciled with a provider invoice.
 
-Publication is authorized to https://github.com/DanielKim-94/HW6. Anonymous remote verification is required after the push. The user will submit the final repository URL to Canvas themselves; no Canvas submission is performed by this project.
+Published at https://github.com/DanielKim-94/HW6. An anonymous clone verified every initial submitted file byte-for-byte; see `output/publication_verification.json`. The user will submit the final repository URL to Canvas themselves; no Canvas submission is performed by this project.
 
 Git attributes preserve exact file bytes, including PDFs and frozen hash-verified evidence, across Windows checkouts.
