@@ -1,0 +1,2 @@
+# In addition to requirements.txt; only used to author the local PDF test quote.
+reportlab==5.0.1

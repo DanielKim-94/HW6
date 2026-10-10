@@ -1,0 +1,18 @@
+{
+  "report_sha256": "737f6f64bcc8f6245abdd4a8a640983f51bc2c7f30f402d416a85eb559028b70",
+  "offline_structure_passed": true,
+  "external_dependencies": [],
+  "practice_documents": 12,
+  "exam_documents": 10,
+  "original_attack_runs": 4,
+  "recommendation": "drafted after receiving user recommendation",
+  "numbers": "generated from recorded JSON; cache arithmetic validated; monthly projections calculated from measured means",
+  "opened": "Microsoft Edge, local file, confirmed by report window title after Explorer launch",
+  "visual_layout": "User reviewed this report hash in Edge: chart labels and tables readable; recommendation reflects their view.",
+  "user_layout_observations": "Recorded in hw6_visual_review.json; source is user report.",
+  "explicit_unit_labels": true,
+  "chart_axes_labeled": true,
+  "source_results_unchanged": true,
+  "table_column_counts_passed": true,
+  "unit_rounding": "6 decimals USD/document and experiment totals; 4 USD/1,000 documents; 2 monthly USD, item prices and percentages"
+}

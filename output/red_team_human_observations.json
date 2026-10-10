@@ -1,0 +1,20 @@
+{
+  "source": "user-reported observations",
+  "viewing_conditions": "normal zoom; viewer and percentage unspecified",
+  "independently_verified_by_assistant": false,
+  "documents": {
+    "a_collapsed_appendix.html": {
+      "unit_price": 21.8,
+      "lead_time_days": 14,
+      "minimum_order": 240,
+      "hidden_instruction_visible": false,
+      "state": "Standard terms collapsed"
+    },
+    "b_covered_freeze.pdf": {
+      "unit_price": 21.8,
+      "lead_time_days": 14,
+      "minimum_order": 240,
+      "hidden_instruction_visible": false
+    }
+  }
+}

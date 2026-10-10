@@ -1,0 +1,26 @@
+{
+  "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+  "modes": [
+    "control_baseline",
+    "processing_only",
+    "processing_architecture",
+    "defended"
+  ],
+  "documents": [
+    "p01_bluehen_quote.html",
+    "p02_elmcity_quote.html",
+    "p03_ivyprint_catalog.html",
+    "p04_harborstitch_quote.html",
+    "p05_maplemills_quote.pdf",
+    "p06_qtextile_quote.pdf",
+    "p07_longwharf_quote.pdf",
+    "p08_chapelst_email.eml",
+    "p09_westville_email.eml",
+    "p10_eastrock_email.eml",
+    "p11_yorkst_quote.html",
+    "p12_bluehen_quote.pdf"
+  ],
+  "prior_trap_count": 0,
+  "design": "4 cumulative variants/document; rotated execution order; identical no-cache controls",
+  "estimated_cost_usd": 0.12
+}

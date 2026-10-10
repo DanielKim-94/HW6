@@ -1,0 +1,78 @@
+{
+  "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+  "final_run_ids": {
+    "p01_bluehen_quote.html": "015c147409c04fbd8631b579638ef1eb",
+    "p02_elmcity_quote.html": "c65586f8f3014113a97f58aeed446b80",
+    "p03_ivyprint_catalog.html": "9c45170e5c544d17aa06ba705b904a60",
+    "p04_harborstitch_quote.html": "6e21340d166342e7a8dc99574f5896ac",
+    "p05_maplemills_quote.pdf": "faa57ece93f146f2bf2c57f63864c017",
+    "p06_qtextile_quote.pdf": "898aa75246374199b9f116426636927c",
+    "p07_longwharf_quote.pdf": "f0f283e8fdbd4a32947128f1272eec04",
+    "p08_chapelst_email.eml": "3b6015b5ae09497082d10c5e0bd09454",
+    "p09_westville_email.eml": "b98ae8bd71b44301a747eec71763b9a3",
+    "p10_eastrock_email.eml": "da7a71613469496c9076ed86f75d5f33",
+    "p11_yorkst_quote.html": "5e78787a7ae0436984869bfb2bf9cb1c",
+    "p12_bluehen_quote.pdf": "01ef0ab375c04ec1a972315dd9d5efbb"
+  },
+  "matched_comparison_run_ids": {
+    "control_baseline": [
+      "8b602d2a3e024455910fd2760379cb02",
+      "47e0767d7d564a4abbcbfec2eec91c05",
+      "667264415a9145ff83c31b6e427d73b5",
+      "103f49760fc94910bd51999553eaa00d",
+      "c4efb78a246f40d6887359b27e1456a2",
+      "e16fd48d418b4f408adedcf2a6cc4219",
+      "f9f5daca7da74db48bf0ac9bf4bde991",
+      "7171993b41cc4d94a6cc5551f316ca54",
+      "0150a624c9974c5daa9a4684dceb92b9",
+      "2d50055d198e41708d01964259b8f50a",
+      "289fda0368294c85a84f4ca6f22b97f7",
+      "5d2a4ec219a641f4afb3896a26833670"
+    ],
+    "processing_only": [
+      "e762d5f4ba334f4fb99a51eeb91f62a9",
+      "3ab7fe2c364f4460b6906e16b019fa39",
+      "2e8fca90d4a54c6a908b444606a22000",
+      "e3dd3aa7579a49ceb1ec01739852da5a",
+      "a94b6f80ce3e4c9da2e630ade8644e5d",
+      "caff2fcab11c4ee29ae6ad2295052d7a",
+      "81007ebe50fb4602a0b007cd3e299ba9",
+      "5c13370fb71c4fe1962295d2e42e4468",
+      "22fb8f4a05fe49fdbac618a36b3adfbc",
+      "bf0e3891eaac4c4397699d848c56ff9e",
+      "98d44d5fcc044ea4a5b5b62b716d0f93",
+      "4fc4b16a4b624011a47123de6682b13b"
+    ],
+    "processing_architecture": [
+      "2210279debae451ca184d1ac31e2a691",
+      "6d50bf041f3240a5837ee4372a243544",
+      "424374b9340e4ce7aec26abd86b316c4",
+      "826dce8757ad4925a60e3fde7d3e4b04",
+      "88b192ecd6554fdbb88a0d0a1cc1feee",
+      "bdba2cf2e7ca47fe994e67d0bb625a81",
+      "f439727d2eb84542ad03cb518f5a8416",
+      "4699c34dad71415eb1cb3c46e50676df",
+      "dfdbb8ddb1644b1fb8239ca326257cbd",
+      "c8191eacb20e4f37a60f690719057863",
+      "4f2ef7d3695947e7a87e80e45568cbca",
+      "a3a37c1257ce4801a2bbe1c662135f7f"
+    ],
+    "defended": [
+      "5f4733e3b262494cbcfb63536521e0fe",
+      "97aa80b091d3438ea439a3d3ddc45fec",
+      "9bb4619da645449c9e5cdde2113647d2",
+      "112e17feb2ee4fa1a12dee0b5675883e",
+      "9ad36e68af8f4d72b5b5edda48eaca9f",
+      "ccb4741510af4b06a2a830307e392c2e",
+      "a7b848ee9fdb4841bc14f970a5cc217e",
+      "e2512eff74c14efe8d52eb3be6752132",
+      "2e83846de5e846c8a6ebbeb78d280976",
+      "dd9fa90bb3784604afb6bdc3f1939eb3",
+      "6ec7c20e116548df94210bf3e9c7387d",
+      "4b3dd72af6984b2cb1ca2490ae91fee7"
+    ]
+  },
+  "final_cost_usd": 0.0270927,
+  "combined_marginal_cost_usd": 0.0005482,
+  "raw_six_field_correct": 11
+}

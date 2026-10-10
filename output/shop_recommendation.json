@@ -1,0 +1,5 @@
+{
+  "user_recommendation": "Use it to draft recommendations, with a person reviewing every quote and decision.",
+  "draft": "Use the agent to draft purchasing recommendations, with a person reviewing every original quote and decision before the shop acts. Reviewers should verify vendor identity, visible quote values, and handbook checks; retain human control of emails and payments, because practice improvements do not establish exam accuracy or resistance to unseen attacks. At 1,000 documents per day for 30 days, the tested defended workloads project to about $10.58 under the observed warm exam cache pattern or $67.73 without cached input, assuming the same model, supplied prices, two calls per document, and similar quote/output lengths; gateway fees and human review costs are excluded.",
+  "source": "user-selected recommendation, phrased with recorded evidence and projection assumptions"
+}

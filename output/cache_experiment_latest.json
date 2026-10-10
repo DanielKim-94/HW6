@@ -1,0 +1,21 @@
+{
+  "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+  "preflight_estimate_usd": 0.033,
+  "estimated_enabled_usd": 0.005,
+  "estimated_no_cache_usd": 0.027,
+  "assumptions": "Two calls/document; roughly 10,750 input tokens/call and 150 output tokens/document; one initial cache write; no extra warm-up request.",
+  "documents": [
+    "p01_bluehen_quote.html",
+    "p02_elmcity_quote.html",
+    "p03_ivyprint_catalog.html",
+    "p04_harborstitch_quote.html",
+    "p05_maplemills_quote.pdf",
+    "p06_qtextile_quote.pdf",
+    "p07_longwharf_quote.pdf",
+    "p08_chapelst_email.eml",
+    "p09_westville_email.eml",
+    "p10_eastrock_email.eml",
+    "p11_yorkst_quote.html",
+    "p12_bluehen_quote.pdf"
+  ]
+}

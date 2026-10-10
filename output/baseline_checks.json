@@ -1,0 +1,52 @@
+{
+  "live_checks": [
+    {
+      "document": "p01_bluehen_quote.html",
+      "run_id": "4450b7485ad54507b27daaee6ce66a53",
+      "status": "passed",
+      "answer": {
+        "vendor": "Blue Hen Apparel",
+        "sku": "CC-HD-006",
+        "unit_price": 21.8,
+        "lead_time_days": 14,
+        "minimum_order": 240,
+        "decision": "recommend",
+        "reason": "Blue Hen Apparel is approved, the $21.80 unit price is at or below the SKU maximum of $25.44, the 14-business-day lead time is reported as 14 days (the quote specifies business days) and is within the 21-day limit, and the 240-unit minimum is within the 600-unit limit."
+      },
+      "returned_models": [
+        "gpt-6-luna-2026-09-22"
+      ],
+      "model_calls": 2,
+      "input_tokens": 21436,
+      "output_tokens": 146,
+      "cached_input_tokens": 10512,
+      "cache_write_tokens": 10672,
+      "cost_usd": 0.00153732
+    },
+    {
+      "document": "p08_chapelst_email.eml",
+      "run_id": "14e05cff92b646efb256c25aac0c01e2",
+      "status": "passed",
+      "answer": {
+        "vendor": "Chapel Street Goods",
+        "sku": "CC-PG-010",
+        "unit_price": 4.27,
+        "lead_time_days": 6,
+        "minimum_order": 250,
+        "decision": "recommend",
+        "reason": "Recommend: Chapel Street Goods is approved, the $4.27 unit price is below the $5.34 maximum, the 6-business-day lead time is within the 21-day limit (reported as quoted, without converting business days), and the 250-unit minimum is at most 600."
+      },
+      "returned_models": [
+        "gpt-6-luna-2026-09-22"
+      ],
+      "model_calls": 2,
+      "input_tokens": 21431,
+      "output_tokens": 141,
+      "cached_input_tokens": 21005,
+      "cache_write_tokens": 174,
+      "cost_usd": 0.0003275
+    }
+  ],
+  "offline_checks": "5 passed",
+  "trap_calls": 0
+}

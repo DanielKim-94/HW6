@@ -1,0 +1,11 @@
+{
+  "source": "user-reported visual review",
+  "browser": "Microsoft Edge",
+  "reviewed_report_sha256": "737f6f64bcc8f6245abdd4a8a640983f51bc2c7f30f402d416a85eb559028b70",
+  "date": "2026-10-10",
+  "chart_labels_readable": true,
+  "tables_readable": true,
+  "recommendation_reflects_user_view": true,
+  "user_statement": "I reviewed the report in Edge. The chart labels and tables are readable, and the recommendation reflects my view.",
+  "independent_assistant_screenshot_review": false
+}

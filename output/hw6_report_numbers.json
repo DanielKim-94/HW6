@@ -1,0 +1,72 @@
+{
+  "cache_total_usd": "0.005124405",
+  "no_cache_total_usd": "0.0266000",
+  "savings_percent": "80.73531954887218045112781955",
+  "monthly_projections_usd": {
+    "baseline_uncached": "66.50000000000000000000000001",
+    "baseline_observed_cache": "12.81101250000",
+    "baseline_daily_cold": "9.831043950",
+    "defended_uncached": "67.731750000",
+    "defended_exam_warm": "10.578690000"
+  },
+  "selected_exam_cost_usd": "0.003526230",
+  "exam_accuracy": "unknown",
+  "source_files": [
+    {
+      "file": "cache_test.json",
+      "sha256": "3023ca12f07763c8995044cbfda856f5d984fc3ab04b75fc2926ac89013104d0"
+    },
+    {
+      "file": "cache_experiment_latest.json",
+      "sha256": "b7fe3f870fee33036eea8aec0b4ef52db42d16ac1d44d4420e66ee77af633970"
+    },
+    {
+      "file": "attack_results.json",
+      "sha256": "8c4f90ef4504bb21900fb764e37fbedd7a201aa0499970e55a80e5199d71ef3c"
+    },
+    {
+      "file": "attack_experiment_latest.json",
+      "sha256": "15a0559b38c26c9f33f7b343a4b1e70566287bf60d449b620085c99b59a6fa3f"
+    },
+    {
+      "file": "defense_results.json",
+      "sha256": "e1dc21b5e7331e9427daeb219c924cdca70133f31e4c3a093b0d5135bd096023"
+    },
+    {
+      "file": "defense_controls.json",
+      "sha256": "977fea0fb7e4ac82eddbd1a5df1751903d96201c448e4d8380ff73ed2e3ecc92"
+    },
+    {
+      "file": "defense_summary.json",
+      "sha256": "a70d29826031315416d2e1044482d801cfc2f098f28d9334bea2bf0b92e8ef2f"
+    },
+    {
+      "file": "red_team_results.json",
+      "sha256": "6d1aac8c87dc3ad9ed9a1abdab851f7d40624cc5cf869a27e713e755c1933dec"
+    },
+    {
+      "file": "red_team_manifest.json",
+      "sha256": "c7e3f279827f7b68f5db4b0148168e970b78553234e38ae1bdee878949b30a39"
+    },
+    {
+      "file": "red_team_human_observations.json",
+      "sha256": "9d2246bc4ae3648c376a5fdc1ccf99a559dacd034a50104e124de4ed087ef667"
+    },
+    {
+      "file": "exam_results.json",
+      "sha256": "d1e3c82615aa88f5be0585ee418a0956196107f934017a2aabfe5d90bc9d6c34"
+    },
+    {
+      "file": "exam_attempts.json",
+      "sha256": "475c19b20144e1e5eb1ecb09a2edfc5a0a4991c83d377be3b261d63bd38fe0db"
+    },
+    {
+      "file": "exam_experiment.json",
+      "sha256": "bddc29994b8e58c2f098ff9236f6b8d9de883a961a475c59d37f3be6f7dfa136"
+    },
+    {
+      "file": "exam_export_verification.json",
+      "sha256": "f31d8e078795c71f3746eb3fe5eb3031e8b363e1680fc55047627e96fd873126"
+    }
+  ]
+}

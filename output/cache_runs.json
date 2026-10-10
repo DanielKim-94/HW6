@@ -1,0 +1,1354 @@
+[
+  {
+    "experiment_id": "0ce81fc580fc47b992ce90c31cd8222c",
+    "run_id": "8996e80c6fa049b39dcdc21245319ba2",
+    "setup": "handbook_cache_enabled",
+    "document": "data/practice_docs/p01_bluehen_quote.html",
+    "status": "failed",
+    "error_type": "RuntimeError"
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "badebc6c01ad45c681892821cefad660",
+    "setup": "handbook_cache_enabled",
+    "document": "data/practice_docs/p01_bluehen_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-HD-006",
+      "unit_price": 21.8,
+      "lead_time_days": 14,
+      "minimum_order": 240,
+      "decision": "recommend",
+      "reason": "Recommend: Blue Hen Apparel is approved, the $21.80 unit price is below the SKU maximum of $25.44, the quoted 14 business days is within the 21-day limit (reported as business days, not converted), and the 240-unit minimum is within the 600-unit limit."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "ef9fb18189f947af92cacb6c8e7bcb3e",
+    "setup": "handbook_cache_enabled",
+    "document": "data/practice_docs/p02_elmcity_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Elm City Screenprint",
+      "sku": "CC-TE-004",
+      "unit_price": 5.11,
+      "lead_time_days": 9,
+      "minimum_order": 300,
+      "decision": "recommend",
+      "reason": "Recommend: Elm City Screenprint is approved, the revised $5.11 unit price is below CC-TE-004’s $8.51 maximum, the 9-business-day lead time is within the 21-day limit (reported as quoted, without converting business days), and the 300-unit minimum is within the 600-unit limit."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "163bc29d1f824adebc3a7ee505a05800",
+    "setup": "handbook_cache_enabled",
+    "document": "data/practice_docs/p03_ivyprint_catalog.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Ivy Print Co (vendor of record: Chapel Street Goods)",
+      "sku": "CC-PG-006",
+      "unit_price": 5.83,
+      "lead_time_days": 10,
+      "minimum_order": 150,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because the Ivy Print Co vendor identity fails the approved-vendor check: Ivy Print Co is removed, and although the document names approved Chapel Street Goods as vendor of record, the named vendor identity is Ivy Print Co; the quoted 10-day lead time is in business days."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "b83aa978548440b598bf66695a50760a",
+    "setup": "handbook_cache_enabled",
+    "document": "data/practice_docs/p04_harborstitch_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Harbor Stitch Embroidery",
+      "sku": "CC-HT-001",
+      "unit_price": 8.68,
+      "lead_time_days": 16,
+      "minimum_order": 120,
+      "decision": "do_not_recommend",
+      "reason": "The vendor is approved and the $8.68 unit price is within the $9.78 SKU maximum and the 120-unit minimum is within the 600-unit limit, but the quoted 16 business days cannot be verified as at most 21 days because the handbook's lead-time limit does not specify business days or calendar days."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "c946377d0c0749e69c0e8592445ed976",
+    "setup": "handbook_cache_enabled",
+    "document": "data/practice_docs/p05_maplemills_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Maple Leaf Mills",
+      "sku": "CC-WV-003",
+      "unit_price": 24.16,
+      "lead_time_days": 28,
+      "minimum_order": 100,
+      "decision": "do_not_recommend",
+      "reason": "Maple Leaf Mills is approved and the $24.16 unit price is below the SKU maximum of $29.68, and the 100-unit minimum passes, but the quoted lead time of 28 business days exceeds the 21-day limit; the quote specifies business days, so 28 is reported without conversion."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "aec937c896b647f9a2c36c5b227a7ffd",
+    "setup": "handbook_cache_enabled",
+    "document": "data/practice_docs/p06_qtextile_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Quinnipiac Textile Deals",
+      "sku": "CC-TE-017",
+      "unit_price": 7.01,
+      "lead_time_days": 6,
+      "minimum_order": 200,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because Quinnipiac Textile Deals is a removed, unapproved vendor, regardless of its price and order terms; the quoted lead time is 6 business days, not an asserted calendar-day count."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "1132129c2ed448878ee1e71cf6d13c50",
+    "setup": "handbook_cache_enabled",
+    "document": "data/practice_docs/p07_longwharf_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Long Wharf Knitting",
+      "sku": "CC-KN-001",
+      "unit_price": 17.23,
+      "lead_time_days": 7,
+      "minimum_order": 120,
+      "decision": "recommend",
+      "reason": "Recommend: Long Wharf Knitting is approved, the $17.23 unit price is at or below CC-KN-001’s $21.40 maximum, the corrected lead time is 7 business days (reported as 7 days, not converted), which is within 21 days, and the 120-unit minimum is within the 600-unit limit."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "bdc1d801f42f4a7d85d80b8369619418",
+    "setup": "handbook_cache_enabled",
+    "document": "data/practice_docs/p08_chapelst_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-010",
+      "unit_price": 4.27,
+      "lead_time_days": 6,
+      "minimum_order": 250,
+      "decision": "recommend",
+      "reason": "Recommend: Chapel Street Goods is approved, the $4.27 unit price is within the $5.34 maximum, and the 6-business-day lead time (reported as quoted, not converted to calendar days) and 250-unit minimum meet the purchasing limits."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "0276a203f0504e539d4e1eee09019c27",
+    "setup": "handbook_cache_enabled",
+    "document": "data/practice_docs/p09_westville_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "Westville Bag Co",
+      "sku": "CC-BG-007",
+      "unit_price": 24.82,
+      "lead_time_days": 26,
+      "minimum_order": 144,
+      "decision": "do_not_recommend",
+      "reason": "Westville Bag Co is approved, the $24.82 unit price is below the SKU's $28.22 maximum, and the 144-unit minimum is within the 600-unit limit, but the quoted lead time of 26 business days exceeds the 21-day limit (reported as business days, not converted to calendar days)."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "ee9ae52518ac4f3c9f30032c513e5f84",
+    "setup": "handbook_cache_enabled",
+    "document": "data/practice_docs/p10_eastrock_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "East Rock Ceramics",
+      "sku": "CC-MG-003",
+      "unit_price": 4.87,
+      "lead_time_days": 11,
+      "minimum_order": 96,
+      "decision": "recommend",
+      "reason": "Recommend: East Rock Ceramics is approved, the $4.87 unit price is below the $6.10 maximum, the 11-day lead time is within the 21-day limit (quoted in business days), and the 96-unit minimum is within the 600-unit limit."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "1ca3a5879fd543c3a06cd88a5877ea25",
+    "setup": "handbook_cache_enabled",
+    "document": "data/practice_docs/p11_yorkst_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "York Street Headwear",
+      "sku": "CC-HW-002",
+      "unit_price": 13.62,
+      "lead_time_days": 12,
+      "minimum_order": 180,
+      "decision": "do_not_recommend",
+      "reason": "York Street Headwear is approved and the 12-business-day lead time (reported as 12 days, without converting business days to calendar days) and 180-unit minimum pass, but the $13.62 unit price exceeds the $11.52 maximum for CC-HW-002, so the price check fails."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "a4a003ecbf014456a740a5c45ecb7f0e",
+    "setup": "handbook_cache_enabled",
+    "document": "data/practice_docs/p12_bluehen_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-CR-010",
+      "unit_price": 17.44,
+      "lead_time_days": 13,
+      "minimum_order": 200,
+      "decision": "recommend",
+      "reason": "Recommend: Blue Hen Apparel is approved, the revised quoted unit price of $17.44 is below CC-CR-010’s $23.25 maximum, the 13-day lead time is within 21 days (quoted as business days), and the 200-unit minimum is at most 600."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "02b1e202c5114cf59a9221fd4c451c47",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p01_bluehen_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-HD-006",
+      "unit_price": 21.8,
+      "lead_time_days": 14,
+      "minimum_order": 240,
+      "decision": "recommend",
+      "reason": "Blue Hen Apparel is approved, the $21.80 unit price is below the $25.44 maximum, and the 240-unit minimum is within limit; the quoted 14 business days is reported as stated and, without converting business days to calendar days, the lead-time check cannot be verified as at most 21 days, so this recommendation should be held pending clarification."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "f826c482654843e49d07dc32d97bc60c",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p02_elmcity_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Elm City Screenprint",
+      "sku": "CC-TE-004",
+      "unit_price": 5.11,
+      "lead_time_days": 9,
+      "minimum_order": 300,
+      "decision": "recommend",
+      "reason": "Elm City Screenprint is approved, the revised unit price of $5.11 is below the SKU maximum of $8.51, the 9-business-day lead time is reported as 9 days (without converting business days) and is within the 21-day limit, and the 300-unit minimum is within the 600-unit limit."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "252e2256e2b243c78e6ba5a2109fb2ac",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p03_ivyprint_catalog.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Ivy Print Co (vendor of record: Chapel Street Goods)",
+      "sku": "CC-PG-006",
+      "unit_price": 5.83,
+      "lead_time_days": 10,
+      "minimum_order": 150,
+      "decision": "do_not_recommend",
+      "reason": "Although the quoted price ($5.83) is below the SKU maximum ($7.22), lead time is 10 business days (reported as quoted, not converted) and minimum order is 150, Ivy Print Co is removed and not approved; the document identifies Chapel Street Goods as vendor of record, but the quote is presented by Ivy Print Co, so vendor approval cannot be verified for this quote."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "e1c11d9e16b74c87a712a4a4f4be7c9b",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p04_harborstitch_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Harbor Stitch Embroidery",
+      "sku": "CC-HT-001",
+      "unit_price": 8.68,
+      "lead_time_days": 16,
+      "minimum_order": 120,
+      "decision": "recommend",
+      "reason": "Recommend because Harbor Stitch Embroidery is approved, the $8.68 unit price is below the $9.78 maximum, and the 120-unit minimum is within limit; the quoted 16 business days is reported as stated and is within the 21-day lead-time limit."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "53121bac429e4650b01e4b070faf3cd2",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p05_maplemills_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Maple Leaf Mills",
+      "sku": "CC-WV-003",
+      "unit_price": 24.16,
+      "lead_time_days": 28,
+      "minimum_order": 100,
+      "decision": "do_not_recommend",
+      "reason": "Maple Leaf Mills is approved and the $24.16 unit price is below CC-WV-003’s $29.68 maximum, and the 100-unit minimum passes, but the quoted lead time is 28 business days (reported as quoted, not converted to calendar days), exceeding the 21-day limit."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "6e8162f3a9334aeeb00490da81ff17c2",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p06_qtextile_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Quinnipiac Textile Deals",
+      "sku": "CC-TE-017",
+      "unit_price": 7.01,
+      "lead_time_days": 6,
+      "minimum_order": 200,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend: Quinnipiac Textile Deals is on the handbook’s removed-vendor list, so it fails the approved-vendor check; the quote states 6 business days, reported as quoted without converting to calendar days."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "a870e233e3e2413bbb832de37abd440b",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p07_longwharf_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Long Wharf Knitting",
+      "sku": "CC-KN-001",
+      "unit_price": 17.23,
+      "lead_time_days": 7,
+      "minimum_order": 120,
+      "decision": "recommend",
+      "reason": "Long Wharf Knitting is approved, the $17.23 unit price is below CC-KN-001’s $21.40 maximum, the corrected lead time is 7 days (the document labels the superseded 35-day estimate as business days), and the 120-unit minimum is within the 600-unit limit."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "cb77e41ab9d2487192b9f81592976889",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p08_chapelst_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-010",
+      "unit_price": 4.27,
+      "lead_time_days": 6,
+      "minimum_order": 250,
+      "decision": "do_not_recommend",
+      "reason": "Although Chapel Street Goods is approved and its 6-business-day lead time (reported as 6 days, without converting business days) and 250-unit minimum meet the limits, the $4.27 unit price exceeds the SKU's $5.34 maximum—correction: it is below the maximum, so all checks pass and this should be recommended."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "97530bc044434f628ff90c4d9160db65",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p09_westville_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "Westville Bag Co",
+      "sku": "CC-BG-007",
+      "unit_price": 24.82,
+      "lead_time_days": 26,
+      "minimum_order": 144,
+      "decision": "do_not_recommend",
+      "reason": "Although Westville Bag Co is approved and the $24.82 unit price is below the SKU maximum of $28.22 with a 144-unit minimum, the 26-business-day lead time exceeds the 21-day limit (reported as quoted; not converted to calendar days)."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "b02d034833974d0ebd41ecf4e1c6aeb1",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p10_eastrock_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "East Rock Ceramics",
+      "sku": "CC-MG-003",
+      "unit_price": 4.87,
+      "lead_time_days": 11,
+      "minimum_order": 96,
+      "decision": "recommend",
+      "reason": "East Rock Ceramics is approved, the $4.87 unit price is below the SKU maximum of $6.10, the quoted lead time is 11 business days (reported as stated, not converted to calendar days) and is within the 21-day limit, and the 96-unit minimum is within the 600-unit limit."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "f4a8af43f0a64396895db0f0f725412c",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p11_yorkst_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "York Street Headwear",
+      "sku": "CC-HW-002",
+      "unit_price": 13.62,
+      "lead_time_days": 12,
+      "minimum_order": 180,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because York Street Headwear is approved and the 180-unit minimum and 12-business-day lead time (reported as 12 days, without converting business days) meet the limits, but the $13.62 unit price exceeds the SKU maximum of $11.52."
+    }
+  },
+  {
+    "experiment_id": "006bafa7593c4943bd61d4ea99deefb2",
+    "run_id": "ba506cfe9a03469cb31c15de1e3c6ed8",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p12_bluehen_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-CR-010",
+      "unit_price": 17.44,
+      "lead_time_days": 13,
+      "minimum_order": 200,
+      "decision": "recommend",
+      "reason": "Blue Hen Apparel is approved, the revised quoted price of $17.44 is below CC-CR-010’s $23.25 maximum unit cost, the 13-business-day lead time is reported as 13 days (without converting business days) and is within the 21-day limit, and the 200-unit minimum is within the 600-unit limit."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "8b602d2a3e024455910fd2760379cb02",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p01_bluehen_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-HD-006",
+      "unit_price": 21.8,
+      "lead_time_days": 14,
+      "minimum_order": 240,
+      "decision": "recommend",
+      "reason": "Recommend: Blue Hen Apparel is approved, the $21.80 unit price is at or below the SKU maximum of $25.44, the 14-business-day lead time is within the 21-day limit (reported as business days), and the 240-unit minimum order is at most 600."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "e762d5f4ba334f4fb99a51eeb91f62a9",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p01_bluehen_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-HD-006",
+      "unit_price": 21.8,
+      "lead_time_days": 14,
+      "minimum_order": 240,
+      "decision": "recommend",
+      "reason": "Recommend: Blue Hen Apparel is approved, the $21.80 unit price is at or below the $25.44 maximum, the 14-business-day lead time is within 21 days (reported as quoted, without converting business days), and the 240-unit minimum is within 600 units."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "2210279debae451ca184d1ac31e2a691",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p01_bluehen_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-HD-006",
+      "unit_price": 21.8,
+      "lead_time_days": 14,
+      "minimum_order": 240,
+      "decision": "recommend",
+      "reason": "Recommend because the vendor is approved, the unit price is within the SKU maximum, the quoted day count is at most 21 (business-day wording is retained without calendar conversion), and the minimum order is at most 600 units."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "5f4733e3b262494cbcfb63536521e0fe",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p01_bluehen_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-HD-006",
+      "unit_price": 21.8,
+      "lead_time_days": 14,
+      "minimum_order": 240,
+      "decision": "recommend",
+      "reason": "Recommend because the vendor is approved, the unit price is within the SKU maximum, the quoted day count is at most 21 (business-day wording is retained without calendar conversion), and the minimum order is at most 600 units."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "3ab7fe2c364f4460b6906e16b019fa39",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p02_elmcity_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Elm City Screenprint",
+      "sku": "CC-TE-004",
+      "unit_price": 9.83,
+      "lead_time_days": 9,
+      "minimum_order": 300,
+      "decision": "do_not_recommend",
+      "reason": "Elm City Screenprint is approved and the 300-unit minimum passes, but the $9.83 unit price exceeds CC-TE-004’s $8.51 maximum; the quoted lead time is 9 business days (reported as 9 days, not converted to calendar days) and is within the 21-day limit."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "6d50bf041f3240a5837ee4372a243544",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p02_elmcity_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Elm City Screenprint",
+      "sku": "CC-TE-004",
+      "unit_price": 9.83,
+      "lead_time_days": 9,
+      "minimum_order": 300,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because unit price exceeds the handbook maximum."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "97aa80b091d3438ea439a3d3ddc45fec",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p02_elmcity_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Elm City Screenprint",
+      "sku": "CC-TE-004",
+      "unit_price": 9.83,
+      "lead_time_days": 9,
+      "minimum_order": 300,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because unit price exceeds the handbook maximum."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "47e0767d7d564a4abbcbfec2eec91c05",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p02_elmcity_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Elm City Screenprint",
+      "sku": "CC-TE-004",
+      "unit_price": 5.11,
+      "lead_time_days": 9,
+      "minimum_order": 300,
+      "decision": "recommend",
+      "reason": "Recommend: Elm City Screenprint is approved, the revised $5.11 unit price is below CC-TE-004’s $8.51 maximum, the 9-day lead time is within 21 days, and the 300-unit minimum is within 600; the quote specifies business days, which are reported as stated without conversion."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "424374b9340e4ce7aec26abd86b316c4",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p03_ivyprint_catalog.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Ivy Print Co",
+      "sku": "CC-PG-006",
+      "unit_price": 5.83,
+      "lead_time_days": 10,
+      "minimum_order": 150,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because vendor is not approved."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "9bb4619da645449c9e5cdde2113647d2",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p03_ivyprint_catalog.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Ivy Print Co",
+      "sku": "CC-PG-006",
+      "unit_price": 5.83,
+      "lead_time_days": 10,
+      "minimum_order": 150,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because vendor is not approved."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "667264415a9145ff83c31b6e427d73b5",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p03_ivyprint_catalog.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Ivy Print Co (vendor of record: Chapel Street Goods)",
+      "sku": "CC-PG-006",
+      "unit_price": 5.83,
+      "lead_time_days": 10,
+      "minimum_order": 150,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend: Ivy Print Co is on the handbook’s removed-vendor list (approved-vendor check fails); the document specifies 10 business days, retained as quoted, and its price and minimum order meet the SKU limits."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "2e8fca90d4a54c6a908b444606a22000",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p03_ivyprint_catalog.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Ivy Print Co",
+      "sku": "CC-PG-006",
+      "unit_price": 5.83,
+      "lead_time_days": 10,
+      "minimum_order": 150,
+      "decision": "do_not_recommend",
+      "reason": "Ivy Print Co is on the handbook’s removed-vendor list, so the approved-vendor check fails; the quoted lead time is 10 business days (reported as stated), and the price and minimum order meet their limits."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "112e17feb2ee4fa1a12dee0b5675883e",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p04_harborstitch_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Harbor Stitch Embroidery",
+      "sku": "CC-HT-001",
+      "unit_price": 8.68,
+      "lead_time_days": 16,
+      "minimum_order": 120,
+      "decision": "recommend",
+      "reason": "Recommend because the vendor is approved, the unit price is within the SKU maximum, the quoted day count is at most 21 (business-day wording is retained without calendar conversion), and the minimum order is at most 600 units."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "103f49760fc94910bd51999553eaa00d",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p04_harborstitch_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Harbor Stitch Embroidery",
+      "sku": "CC-HT-001",
+      "unit_price": 8.68,
+      "lead_time_days": 16,
+      "minimum_order": 120,
+      "decision": "recommend",
+      "reason": "Recommend because Harbor Stitch Embroidery is approved, the $8.68 unit price is below the $9.78 maximum, and the 120-unit minimum is within the 600-unit limit; its quoted lead time is 16 business days (reported as quoted, not converted), within the 21-day limit."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "e3dd3aa7579a49ceb1ec01739852da5a",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p04_harborstitch_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Harbor Stitch Embroidery",
+      "sku": "CC-HT-001",
+      "unit_price": 8.68,
+      "lead_time_days": 16,
+      "minimum_order": 120,
+      "decision": "recommend",
+      "reason": "Recommend: Harbor Stitch Embroidery is approved, the $8.68 unit price is within the $9.78 maximum, and the 120-unit minimum meets the limit; the 16-day lead time is stated in business days, so this quote meets the 21-day limit when assessed in the quoted day unit, without converting it to calendar days."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "826dce8757ad4925a60e3fde7d3e4b04",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p04_harborstitch_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Harbor Stitch Embroidery",
+      "sku": "CC-HT-001",
+      "unit_price": 8.68,
+      "lead_time_days": 16,
+      "minimum_order": 120,
+      "decision": "recommend",
+      "reason": "Recommend because the vendor is approved, the unit price is within the SKU maximum, the quoted day count is at most 21 (business-day wording is retained without calendar conversion), and the minimum order is at most 600 units."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "c4efb78a246f40d6887359b27e1456a2",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p05_maplemills_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Maple Leaf Mills",
+      "sku": "CC-WV-003",
+      "unit_price": 24.16,
+      "lead_time_days": 28,
+      "minimum_order": 100,
+      "decision": "do_not_recommend",
+      "reason": "Although Maple Leaf Mills is approved, the price ($24.16) is within the $29.68 maximum and the 100-unit minimum is within limit, the quoted lead time is 28 business days, exceeding the 21-day maximum (reported as business days, not converted to calendar days)."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "a94b6f80ce3e4c9da2e630ade8644e5d",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p05_maplemills_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Maple Leaf Mills",
+      "sku": "CC-WV-003",
+      "unit_price": 24.16,
+      "lead_time_days": 28,
+      "minimum_order": 100,
+      "decision": "do_not_recommend",
+      "reason": "Although Maple Leaf Mills is approved, the $24.16 unit price is within the $29.68 maximum and the 100-unit minimum is within the 600-unit limit, but the stated lead time is 28 business days (reported as 28 days, not converted), exceeding the 21-day maximum."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "88b192ecd6554fdbb88a0d0a1cc1feee",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p05_maplemills_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Maple Leaf Mills",
+      "sku": "CC-WV-003",
+      "unit_price": 24.16,
+      "lead_time_days": 28,
+      "minimum_order": 100,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because quoted lead time exceeds 21."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "9ad36e68af8f4d72b5b5edda48eaca9f",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p05_maplemills_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Maple Leaf Mills",
+      "sku": "CC-WV-003",
+      "unit_price": 24.16,
+      "lead_time_days": 28,
+      "minimum_order": 100,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because quoted lead time exceeds 21."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "caff2fcab11c4ee29ae6ad2295052d7a",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p06_qtextile_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Quinnipiac Textile Deals",
+      "sku": "CC-TE-017",
+      "unit_price": 7.01,
+      "lead_time_days": 6,
+      "minimum_order": 200,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because Quinnipiac Textile Deals is removed from the approved vendor list; the quoted 6-day lead time is in business days, and vendor approval fails regardless of its price and minimum order."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "bdba2cf2e7ca47fe994e67d0bb625a81",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p06_qtextile_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Quinnipiac Textile Deals",
+      "sku": "CC-TE-017",
+      "unit_price": 7.01,
+      "lead_time_days": 6,
+      "minimum_order": 200,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because vendor is not approved."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "ccb4741510af4b06a2a830307e392c2e",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p06_qtextile_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Quinnipiac Textile Deals",
+      "sku": "CC-TE-017",
+      "unit_price": 7.01,
+      "lead_time_days": 6,
+      "minimum_order": 200,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because vendor is not approved."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "e16fd48d418b4f408adedcf2a6cc4219",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p06_qtextile_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Quinnipiac Textile Deals",
+      "sku": "CC-TE-017",
+      "unit_price": 7.01,
+      "lead_time_days": 6,
+      "minimum_order": 200,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because Quinnipiac Textile Deals is on the handbook’s removed-vendor list, regardless of its price and other quoted terms; the quoted lead time is 6 business days."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "f439727d2eb84542ad03cb518f5a8416",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p07_longwharf_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Long Wharf Knitting",
+      "sku": "CC-KN-001",
+      "unit_price": 17.23,
+      "lead_time_days": 35,
+      "minimum_order": 120,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because quoted lead time exceeds 21."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "a7b848ee9fdb4841bc14f970a5cc217e",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p07_longwharf_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Long Wharf Knitting",
+      "sku": "CC-KN-001",
+      "unit_price": 17.23,
+      "lead_time_days": 35,
+      "minimum_order": 120,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because quoted lead time exceeds 21."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "f9f5daca7da74db48bf0ac9bf4bde991",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p07_longwharf_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Long Wharf Knitting",
+      "sku": "CC-KN-001",
+      "unit_price": 17.23,
+      "lead_time_days": 7,
+      "minimum_order": 120,
+      "decision": "recommend",
+      "reason": "Recommend because Long Wharf Knitting is approved, the $17.23 unit price is at or below the $21.40 maximum, and the 120-unit minimum is within the 600-unit limit; the quote corrects the old 35-day lead time to 7 business days, which is 7 days as stated and within the 21-day limit."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "81007ebe50fb4602a0b007cd3e299ba9",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p07_longwharf_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Long Wharf Knitting",
+      "sku": "CC-KN-001",
+      "unit_price": 17.23,
+      "lead_time_days": 35,
+      "minimum_order": 120,
+      "decision": "do_not_recommend",
+      "reason": "Although the vendor is approved, the $17.23 unit price is within the $21.40 maximum and the 120-unit minimum is within the 600-unit limit, the 35-business-day lead time exceeds the 21-day maximum; the quoted 35 days are business days and have not been converted to calendar days."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "e2512eff74c14efe8d52eb3be6752132",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p08_chapelst_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-010",
+      "unit_price": 4.27,
+      "lead_time_days": 6,
+      "minimum_order": 250,
+      "decision": "recommend",
+      "reason": "Recommend because the vendor is approved, the unit price is within the SKU maximum, the quoted day count is at most 21 (business-day wording is retained without calendar conversion), and the minimum order is at most 600 units."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "7171993b41cc4d94a6cc5551f316ca54",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p08_chapelst_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-010",
+      "unit_price": 4.27,
+      "lead_time_days": 6,
+      "minimum_order": 250,
+      "decision": "recommend",
+      "reason": "Recommend: Chapel Street Goods is approved, and the $4.27 unit price is below the $5.34 maximum, the 6-business-day lead time is within the 21-day limit (reported as quoted, without converting business days), and the 250-unit minimum is below 600."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "5c13370fb71c4fe1962295d2e42e4468",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p08_chapelst_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-010",
+      "unit_price": 4.27,
+      "lead_time_days": 6,
+      "minimum_order": 250,
+      "decision": "recommend",
+      "reason": "Recommend because Chapel Street Goods is approved, the $4.27 unit price is at or below the $5.34 maximum, and the 6-business-day lead time (reported as 6 days) and 250-unit minimum meet their limits."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "4699c34dad71415eb1cb3c46e50676df",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p08_chapelst_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-010",
+      "unit_price": 4.27,
+      "lead_time_days": 6,
+      "minimum_order": 250,
+      "decision": "recommend",
+      "reason": "Recommend because the vendor is approved, the unit price is within the SKU maximum, the quoted day count is at most 21 (business-day wording is retained without calendar conversion), and the minimum order is at most 600 units."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "0150a624c9974c5daa9a4684dceb92b9",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p09_westville_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "Westville Bag Co",
+      "sku": "CC-BG-007",
+      "unit_price": 24.82,
+      "lead_time_days": 26,
+      "minimum_order": 144,
+      "decision": "do_not_recommend",
+      "reason": "Westville Bag Co is approved, the $24.82 unit price is at or below the $28.22 maximum, and the 144-unit minimum is within the 600-unit limit, but the quoted 26 business days exceeds the 21-day lead-time limit (reported as business days, not converted)."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "22fb8f4a05fe49fdbac618a36b3adfbc",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p09_westville_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "Westville Bag Co",
+      "sku": "CC-BG-007",
+      "unit_price": 24.82,
+      "lead_time_days": 26,
+      "minimum_order": 144,
+      "decision": "do_not_recommend",
+      "reason": "Westville Bag Co is approved and the $24.82 unit price is below the $28.22 maximum, and the 144-unit minimum is within the 600-unit limit, but lead time fails: the quote states 26 business days, exceeding the 21-day maximum (reported as business days, not converted to calendar days)."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "dfdbb8ddb1644b1fb8239ca326257cbd",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p09_westville_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "Westville Bag Co",
+      "sku": "CC-BG-007",
+      "unit_price": 24.82,
+      "lead_time_days": 26,
+      "minimum_order": 144,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because quoted lead time exceeds 21."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "2e83846de5e846c8a6ebbeb78d280976",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p09_westville_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "Westville Bag Co",
+      "sku": "CC-BG-007",
+      "unit_price": 24.82,
+      "lead_time_days": 26,
+      "minimum_order": 144,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because quoted lead time exceeds 21."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "bf0e3891eaac4c4397699d848c56ff9e",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p10_eastrock_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "East Rock Ceramics",
+      "sku": "CC-MG-003",
+      "unit_price": 4.87,
+      "lead_time_days": 11,
+      "minimum_order": 96,
+      "decision": "recommend",
+      "reason": "Recommend: East Rock Ceramics is approved, the $4.87 unit price is below the CC-MG-003 maximum of $6.10, and the minimum order of 96 is within the 600-unit limit; the stated lead time is 11 business days, which is reported as quoted and meets the 21-day threshold."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "c8191eacb20e4f37a60f690719057863",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p10_eastrock_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "East Rock Ceramics",
+      "sku": "CC-MG-003",
+      "unit_price": 4.87,
+      "lead_time_days": 11,
+      "minimum_order": 96,
+      "decision": "recommend",
+      "reason": "Recommend because the vendor is approved, the unit price is within the SKU maximum, the quoted day count is at most 21 (business-day wording is retained without calendar conversion), and the minimum order is at most 600 units."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "dd9fa90bb3784604afb6bdc3f1939eb3",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p10_eastrock_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "East Rock Ceramics",
+      "sku": "CC-MG-003",
+      "unit_price": 4.87,
+      "lead_time_days": 11,
+      "minimum_order": 96,
+      "decision": "recommend",
+      "reason": "Recommend because the vendor is approved, the unit price is within the SKU maximum, the quoted day count is at most 21 (business-day wording is retained without calendar conversion), and the minimum order is at most 600 units."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "2d50055d198e41708d01964259b8f50a",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p10_eastrock_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "East Rock Ceramics",
+      "sku": "CC-MG-003",
+      "unit_price": 4.87,
+      "lead_time_days": 11,
+      "minimum_order": 96,
+      "decision": "recommend",
+      "reason": "Recommend: East Rock Ceramics is approved, the $4.87 unit price is below the SKU maximum of $6.10, the 11-business-day lead time is within the 21-day limit (reported as quoted, without converting business days), and the 96-unit minimum is within the 600-unit limit."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "4f2ef7d3695947e7a87e80e45568cbca",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p11_yorkst_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "York Street Headwear",
+      "sku": "CC-HW-002",
+      "unit_price": 13.62,
+      "lead_time_days": 12,
+      "minimum_order": 180,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because unit price exceeds the handbook maximum."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "6ec7c20e116548df94210bf3e9c7387d",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p11_yorkst_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "York Street Headwear",
+      "sku": "CC-HW-002",
+      "unit_price": 13.62,
+      "lead_time_days": 12,
+      "minimum_order": 180,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because unit price exceeds the handbook maximum."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "289fda0368294c85a84f4ca6f22b97f7",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p11_yorkst_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "York Street Headwear",
+      "sku": "CC-HW-002",
+      "unit_price": 13.62,
+      "lead_time_days": 12,
+      "minimum_order": 180,
+      "decision": "do_not_recommend",
+      "reason": "York Street Headwear is approved and the 12 business-day lead time (reported as 12 days, not converted) and 180-unit minimum pass, but the $13.62 unit price exceeds CC-HW-002's $11.52 maximum unit cost."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "98d44d5fcc044ea4a5b5b62b716d0f93",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p11_yorkst_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "York Street Headwear",
+      "sku": "CC-HW-002",
+      "unit_price": 13.62,
+      "lead_time_days": 12,
+      "minimum_order": 180,
+      "decision": "do_not_recommend",
+      "reason": "York Street Headwear is approved and the 180-unit minimum passes, but the $13.62 unit price exceeds the $11.52 maximum for CC-HW-002; the quoted 12-day lead time is stated in business days."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "4b3dd72af6984b2cb1ca2490ae91fee7",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p12_bluehen_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-CR-010",
+      "unit_price": 27.72,
+      "lead_time_days": 13,
+      "minimum_order": 200,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because unit price exceeds the handbook maximum."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "5d2a4ec219a641f4afb3896a26833670",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p12_bluehen_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-CR-010",
+      "unit_price": 17.44,
+      "lead_time_days": 13,
+      "minimum_order": 200,
+      "decision": "recommend",
+      "reason": "Blue Hen Apparel is approved, the revised $17.44 unit price is below the SKU maximum of $23.25, the 13-business-day lead time is within 21 days (reported in business days as quoted), and the 200-unit minimum is within the 600-unit limit."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "4fc4b16a4b624011a47123de6682b13b",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p12_bluehen_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-CR-010",
+      "unit_price": 27.72,
+      "lead_time_days": 13,
+      "minimum_order": 200,
+      "decision": "do_not_recommend",
+      "reason": "Blue Hen Apparel is approved, the $27.72 unit price is above the SKU's $23.25 maximum, and the 13-day lead time is stated in business days (not converted to calendar days); minimum order of 200 passes."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "a3a37c1257ce4801a2bbe1c662135f7f",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p12_bluehen_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-CR-010",
+      "unit_price": 27.72,
+      "lead_time_days": 13,
+      "minimum_order": 200,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because unit price exceeds the handbook maximum."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "015c147409c04fbd8631b579638ef1eb",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p01_bluehen_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-HD-006",
+      "unit_price": 21.8,
+      "lead_time_days": 14,
+      "minimum_order": 240,
+      "decision": "recommend",
+      "reason": "Recommend because the vendor is approved, the unit price is within the SKU maximum, the quoted day count is at most 21 (business-day wording is retained without calendar conversion), and the minimum order is at most 600 units."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "c65586f8f3014113a97f58aeed446b80",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p02_elmcity_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Elm City Screenprint",
+      "sku": "CC-TE-004",
+      "unit_price": 9.83,
+      "lead_time_days": 9,
+      "minimum_order": 300,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because unit price exceeds the handbook maximum."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "9c45170e5c544d17aa06ba705b904a60",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p03_ivyprint_catalog.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Ivy Print Co",
+      "sku": "CC-PG-006",
+      "unit_price": 5.83,
+      "lead_time_days": 10,
+      "minimum_order": 150,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because vendor is not approved."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "6e21340d166342e7a8dc99574f5896ac",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p04_harborstitch_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "Harbor Stitch Embroidery",
+      "sku": "CC-HT-001",
+      "unit_price": 8.68,
+      "lead_time_days": 16,
+      "minimum_order": 120,
+      "decision": "recommend",
+      "reason": "Recommend because the vendor is approved, the unit price is within the SKU maximum, the quoted day count is at most 21 (business-day wording is retained without calendar conversion), and the minimum order is at most 600 units."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "faa57ece93f146f2bf2c57f63864c017",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p05_maplemills_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Maple Leaf Mills",
+      "sku": "CC-WV-003",
+      "unit_price": 24.16,
+      "lead_time_days": 28,
+      "minimum_order": 100,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because quoted lead time exceeds 21."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "898aa75246374199b9f116426636927c",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p06_qtextile_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Quinnipiac Textile Deals",
+      "sku": "CC-TE-017",
+      "unit_price": 7.01,
+      "lead_time_days": 6,
+      "minimum_order": 200,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because vendor is not approved."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "f0f283e8fdbd4a32947128f1272eec04",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p07_longwharf_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Long Wharf Knitting",
+      "sku": "CC-KN-001",
+      "unit_price": 17.23,
+      "lead_time_days": 35,
+      "minimum_order": 120,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because quoted lead time exceeds 21."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "3b6015b5ae09497082d10c5e0bd09454",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p08_chapelst_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-010",
+      "unit_price": 4.27,
+      "lead_time_days": 6,
+      "minimum_order": 250,
+      "decision": "recommend",
+      "reason": "Recommend because the vendor is approved, the unit price is within the SKU maximum, the quoted day count is at most 21 (business-day wording is retained without calendar conversion), and the minimum order is at most 600 units."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "b98ae8bd71b44301a747eec71763b9a3",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p09_westville_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "Westville Bag Co",
+      "sku": "CC-BG-007",
+      "unit_price": 24.82,
+      "lead_time_days": 26,
+      "minimum_order": 144,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because quoted lead time exceeds 21."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "da7a71613469496c9076ed86f75d5f33",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p10_eastrock_email.eml",
+    "status": "completed",
+    "answer": {
+      "vendor": "East Rock Ceramics",
+      "sku": "CC-MG-003",
+      "unit_price": 4.87,
+      "lead_time_days": 11,
+      "minimum_order": 96,
+      "decision": "recommend",
+      "reason": "Recommend because the vendor is approved, the unit price is within the SKU maximum, the quoted day count is at most 21 (business-day wording is retained without calendar conversion), and the minimum order is at most 600 units."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "5e78787a7ae0436984869bfb2bf9cb1c",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p11_yorkst_quote.html",
+    "status": "completed",
+    "answer": {
+      "vendor": "York Street Headwear",
+      "sku": "CC-HW-002",
+      "unit_price": 13.62,
+      "lead_time_days": 12,
+      "minimum_order": 180,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because unit price exceeds the handbook maximum."
+    }
+  },
+  {
+    "experiment_id": "bdd2b696c28b4834bb678b039c2eefc3",
+    "run_id": "01ef0ab375c04ec1a972315dd9d5efbb",
+    "setup": "no_cached_input_requested",
+    "document": "data/practice_docs/p12_bluehen_quote.pdf",
+    "status": "completed",
+    "answer": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-CR-010",
+      "unit_price": 27.72,
+      "lead_time_days": 13,
+      "minimum_order": 200,
+      "decision": "do_not_recommend",
+      "reason": "Do not recommend because unit price exceeds the handbook maximum."
+    }
+  }
+]

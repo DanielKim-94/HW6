@@ -1,0 +1,35 @@
+{
+  "experiment_id": "36861285c36645f9903eacb18c50d1af",
+  "baseline": "Problem 3 preserved baseline-v1",
+  "baseline_manifest": {
+    "agent.py": "1e6b0898adc7f222cb024440c5573906f9324f23d6eaa1883d3441489cfe8b05",
+    "tools.py": "8be4a6dceed40cfb0133fb9870d7c75d02dfff2af902e1a0d7273d19f8f1321e",
+    "models.py": "20bd14bba64bb3b5dbcadaa9ca1d608f0791e58647759642f92ce6906ba55db5",
+    "test_agent.py": "56e51a00586a2a9c623ed536f1069e7a70f2295ce5b02dca48ad2fe65dae8211",
+    "prompts/prompt.md": "a81397f52d3a4e7fb44076fc34a8dc02bd2cc165435d8865e5f78f6347997172",
+    "requirements.txt": "b72d8abd3847f8e2c7672e36b00ff19746e94c8cce9f4f545e6f7bd8de3ff926",
+    "requirements-lock.txt": "968ca6104ecd5000f8d837836133e7b4dfbdbe6561ba7a70299231d99a9ad23c",
+    "data/shop_handbook.md": "332eaabbc0b87d3eaf76719e7ef1bb2287fa33a70f1b9cc0dbf115f4d3957cb6",
+    "data/prices.json": "54d294470fe99cf6038f4756052abfc3541399ba0b152dafd15ca17928f93b92",
+    "output/harness.md": "9fcbdc838926b39fd8c0cf3794922e4f4ad6e8302aa97c1375f469d90e0036f2",
+    "output/baseline_checks.json": "f351ed89d1a86fd9b404e1fee74d71c62bdd534d13c3e09fc3e8f71f442a79c2"
+  },
+  "gateway_force_refresh": true,
+  "path_adapters": "ROOT points to HW 6; reader resolves selected relative paths in HW 6",
+  "prior_trap_count": 0,
+  "human_view_comparison": "completed using user-reported observations for four documents",
+  "documents": [
+    "p01_bluehen_quote.html",
+    "p02_elmcity_quote.html",
+    "p03_ivyprint_catalog.html",
+    "p04_harborstitch_quote.html",
+    "p05_maplemills_quote.pdf",
+    "p06_qtextile_quote.pdf",
+    "p07_longwharf_quote.pdf",
+    "p08_chapelst_email.eml",
+    "p09_westville_email.eml",
+    "p10_eastrock_email.eml",
+    "p11_yorkst_quote.html",
+    "p12_bluehen_quote.pdf"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "experiment_id": "a8f5cdd51aa94adc9e3105ec8ac9fc50",
+  "results_sha256": "d1e3c82615aa88f5be0585ee418a0956196107f934017a2aabfe5d90bc9d6c34",
+  "frozen_manifest_sha256": "559bdb7fe018f490d3c24824e2e156b877ca30b456c4f9d54567db8d7b660843",
+  "frozen_unchanged": true,
+  "answers_match_final_audit_events": true,
+  "completed_documents": 10,
+  "failed_attempts": 3,
+  "correctness": "not evaluated; no key consulted",
+  "external_orchestrator_sha256": "3eaefcca9a7ea885a24c505a4be7e2c8ca0a026bbdcafb511bf5c91fd15df2b8",
+  "relative_runner_sha256": "2b9b20d8eb9faa1fe8630717e9a8ac61b6db5a4c103ec182bc25f215e2c89d1c",
+  "rerun_orchestrator_sha256": "d449b34e9de26b21c97dad402490fee28063253469cb84998a880152d3baa408",
+  "workspace_runner_matches_frozen": true,
+  "total_cost_usd": 0.00352623
+}

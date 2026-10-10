@@ -1,0 +1,22 @@
+{
+  "version": "defended-v1",
+  "baseline_verified": true,
+  "sha256": {
+    "agent.py": "3daed9e1c7eacf469ea1da34f3eb0759977a373e23a5f3c36b8ba8ce4490ed29",
+    "tools.py": "885cdab28f15add90304273e358f5e3ceb9d5e34df8b9fb21879e2dda92a2694",
+    "models.py": "86c7ba04d2136248970efc07f1658b28312bc83a4e79009d207ba24caf31a704",
+    "document_processing.py": "ea82384d63bbcdc36d375b2e806abebd06fdee9599863224aa3c0bd9213e6fd3",
+    "purchasing_policy.py": "b71cc5d8cf92011d8f2df01b5fdb200fd787959e3c71f46d6b456ea8aab7ac2d",
+    "undefended.py": "b36a22911bb06a143234ebbd7f1f5938118beca7ffd2df962471433ff11a433a",
+    "prompts/prompt.md": "132d2bd808c6afdbb0275eefd43b0b97e9893cc0a361b9aadda783ffd76b6d62",
+    "requirements.txt": "e50e2493be17340221e447dd74452317a97ed3990b0966b750edd701723023df",
+    "requirements-lock.txt": "7d97910d01d60136adf4486c2b2798198fcc60e61ccba0d5f17be0c6df625ac0",
+    "test_agent.py": "99681ed0e460bdcb5e0bce1e04e4188e7138918cf6285d9741e8bf0ba42a94f9",
+    "test_defenses.py": "b1096e33986bb9fdd7df4ef98aa6cd0295f67bedd1347ceaf8c062b577a84142",
+    "defense_experiment.py": "393d2004362921157f7e9526cb3f5bb769de24cadceb4a13184d42b34fe1619f",
+    "defense_report.py": "a9653c6bc8a7decf8ab0bd8f2a343d43c232c582823030f7e477bcd72c9d487c",
+    "data/shop_handbook.md": "332eaabbc0b87d3eaf76719e7ef1bb2287fa33a70f1b9cc0dbf115f4d3957cb6",
+    "data/prices.json": "54d294470fe99cf6038f4756052abfc3541399ba0b152dafd15ca17928f93b92",
+    "output/harness.md": "08e57409d698cd7cdfa7647522631df0b61a116624dbd4e56b9bb39efe665ad5"
+  }
+}
